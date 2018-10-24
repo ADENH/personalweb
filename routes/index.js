@@ -35,5 +35,9 @@ router.get('/about', function(req, res, next) {
   res.render('about', {page:'About', menuId:'about'});
 });
 
+router.get('/work-single', function(req, res, next) {
+  res.render('work-single', {page:'Work Single', menuId:'work-single'});
+});
+
 
 module.exports = router;
