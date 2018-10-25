@@ -23,6 +23,12 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 
+// Listen
+var port = process.env.PORT || 4000;
+app.listen(port);
+console.log("Listening on localhost:"+ port);
+
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
